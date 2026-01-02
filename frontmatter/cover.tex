@@ -1,12 +1,10 @@
 \begin{titlepage}
 \centering
 
-% Modern geometric background
 \begin{tikzpicture}[remember picture, overlay]
 \shade[top color=accent!5, bottom color=accent!15, middle color=white] 
     (current page.south west) rectangle (current page.north east);
 
-% Decorative elements
 \foreach \x in {0,2,...,20} {
     \foreach \y in {0,3,...,27} {
         \node[circle, fill=accent!10, inner sep=0.8pt] 
@@ -14,7 +12,6 @@
     }
 }
 
-% Corner accents
 \draw[line width=6pt, color=primary, rounded corners=4pt] 
     ($(current page.north west) + (0.5cm, -0.5cm)$) -- 
     ($(current page.north west) + (3cm, -0.5cm)$) -- 
@@ -28,7 +25,6 @@
 
 \vspace*{5cm}
 
-% Title
 {\fontsize{48}{54}\selectfont\bfseries\color{primary}
 Git Internals
 }
