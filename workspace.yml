@@ -1,0 +1,74 @@
+# Papyrxis Workspace Configuration
+# Generated: Fri Jan  2 01:24:03 PM +0330 2026
+
+project:
+  type: book
+  category: technical
+  title: "Git Internals"
+  subtitle: ""
+  author: "Mahdi"
+  email: "bitsgenix@gmail.com"
+  date: "auto"
+  url: "https://github.com/papyrxis/git-internal"
+  subject: "technical project"
+  keywords: "latex, book, technical"
+
+build:
+  engine: pdflatex
+  bibtex: biber
+  output_dir: build
+  watch_mode: true
+
+version:
+  source: git
+  format: "v{major}.{minor}.{patch}"
+  fallback: "dev"
+
+components:
+  - encoding
+  - fonts
+  - math
+  - graphics
+  - tables
+  - hyperref
+  - colors
+  - layout
+  - titles
+  - pagestyles
+  - env
+  - index
+  - bibliography
+  - code
+  - boxes
+  - commands/base
+
+features:
+  toc: true
+  index: true
+  bibliography: true
+  glossary: false
+  appendix: true
+
+frontmatter:
+  - cover
+  - title
+  - copyright
+  - preface
+  - acknowledgments
+  - introduction
+
+colors:
+  scheme: technical
+
+copyright:
+  type: cc-by-sa
+  year: "auto"
+  holder: "Author Name"
+
+cover:
+  type: generated
+  generated:
+    style: modern
+    title_size: large
+    include_subtitle: true
+    include_author: true
