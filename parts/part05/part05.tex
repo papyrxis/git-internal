@@ -1,0 +1,69 @@
+
+\part{Core Algorithms}
+\label{part:algorithms}
+
+\begin{partintro}
+The complex parts. Where algorithmic choices determine correctness and performance.
+\end{partintro}
+
+\chapter{Diff Algorithms}
+% Myers' algorithm - O(ND) complexity
+% Patience diff
+% Histogram diff
+% Trade-offs between algorithms
+% Line ending handling
+% Move detection
+
+\chapter{Three-Way Merge}
+% Base, ours, theirs model
+% Content merging
+% Conflict detection and markers
+% Tree-level merge
+% Rename detection in merge
+% Why index has three stages
+
+\chapter{Merge Strategies}
+% Recursive (default) - why and how
+% Resolve, Ours, Octopus
+% When each applies
+% Strategy options
+% Implementation differences
+
+\chapter{Merge Base (LCA)}
+% Finding lowest common ancestor in DAG
+% Multiple merge bases
+% Virtual merge base
+% Complexity: O(n + m)
+% Optimization with generation numbers
+
+\chapter{Graph Traversal}
+% Commit graph walking
+% Revision walking API
+% Topological sort
+% Date-ordered traversal
+% First-parent traversal
+% Priority queues
+% Reachability algorithms
+
+\chapter{Rename Detection}
+% Similarity scoring
+% Exact renames (hash comparison)
+% Inexact renames (content similarity)
+% Threshold tuning
+% Copy detection
+% Complexity: O(n²) - why it's expensive
+% Break and detect strategies
+
+\chapter{Tree Comparison}
+% Recursive tree diff
+% Hash-based shortcuts
+% Unchanged subtree pruning
+% Path filtering
+% Performance optimization
+
+\chapter{Blame Algorithm}
+% Line-level history tracking
+% Parent diff analysis
+% Rename following
+% Complexity characteristics
+% Optimizations

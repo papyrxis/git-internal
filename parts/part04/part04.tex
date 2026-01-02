@@ -1,0 +1,45 @@
+
+\part{Storage and Compression}
+\label{part:storage}
+
+\begin{partintro}
+How Git stores thousands of objects efficiently. The evolution from loose objects to sophisticated pack files.
+\end{partintro}
+
+\chapter{Loose Objects}
+% One file per object
+% Zlib compression
+% Fanout directory structure (.git/objects/ab/cdef...)
+% When created
+% Why inefficient at scale
+% Filesystem limitations
+
+\chapter{Pack Files}
+% What problem they solve
+% .pack file format
+% .idx index format
+% Delta compression
+% Base selection heuristics
+% Pack generation (git gc)
+
+\chapter{Delta Compression}
+% XDelta algorithm
+% Sliding window
+% Delta chain depth limits
+% Base object selection
+% Trade-offs: space vs time
+% When objects aren't deltified
+
+\chapter{Multi-Pack Index (MIDX)}
+% Problem: many pack files
+% MIDX format
+% Object lookup optimization
+% Reachability bitmaps
+% Maintenance strategies
+
+\chapter{Commit Graph File}
+% Generation numbers v2
+% Bloom filters for path queries
+% Format and structure
+% Incremental updates
+% Performance impact

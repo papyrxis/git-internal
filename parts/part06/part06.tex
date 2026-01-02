@@ -1,0 +1,54 @@
+
+\part{Performance Engineering}
+\label{part:performance}
+
+\begin{partintro}
+Git is fast by design. Specific optimizations, careful profiling, constant attention to performance.
+\end{partintro}
+
+\chapter{Operation Complexity}
+% Branch: O(1) - why
+% Commit: O(changed files)
+% Merge: depends on merge base distance
+% Log: O(commits traversed)
+% Blame: O(n log n)
+% Status: optimizations for large repos
+
+\chapter{Caching Strategies}
+% Object cache
+% Parsed commit cache
+% Tree cache in index
+% Stat cache
+% Name hash cache
+% Delta base cache
+% Invalidation strategies
+
+\chapter{Parallelization}
+% Pack compression threads
+% Checkout parallelization
+% Index preload
+% Parallel directory traversal
+% Thread pool management
+% Where parallelism helps
+
+\chapter{I/O Optimization}
+% Memory-mapped files
+% Pack window management
+% Prefetching strategies
+% Batched operations
+% Reducing system calls
+
+\chapter{Network Protocol}
+% Pack protocol versions (v0, v1, v2)
+% Negotiation phase (want/have)
+% Finding common commits
+% Thin packs
+% Minimizing transfer
+% Resumable operations
+
+\chapter{Geometric Repacking}
+% Why exponential pack sizes
+% Reducing write amplification
+% Maintenance strategy
+% gc.bigPackThreshold
+% Long-term efficiency

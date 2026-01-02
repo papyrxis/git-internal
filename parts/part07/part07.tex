@@ -1,0 +1,47 @@
+
+\part{Engineering Patterns}
+\label{part:patterns}
+
+\begin{partintro}
+Recurring patterns in Git's codebase. How complexity is managed. What makes the code maintainable.
+\end{partintro}
+
+\chapter{Immutability}
+% Objects never change
+% Benefits: caching, threading, debugging
+% What can't be immutable (refs, index)
+% Copy-on-write patterns
+
+\chapter{Callback and Iterator Patterns}
+% Function pointers in C
+% Generic tree walking
+% Ref iteration
+% Object iteration
+% How extensibility is achieved
+
+\chapter{Error Handling}
+% die() and error() functions
+% Return codes vs exit
+% Resource cleanup patterns
+% BUG() and assert()
+% Error message conventions
+
+\chapter{Memory Management}
+% xmalloc and friends
+% String lists and strbuf
+% Memory pools
+% Avoiding leaks in error paths
+% Valgrind and leak detection
+
+\chapter{State Machines}
+% Where Git uses state machines
+% Protocol parsing
+% Merge state tracking
+% Rebase state
+
+\chapter{Extensibility}
+% Hooks system
+% Custom merge drivers
+% Diff drivers
+% Clean/smudge filters
+% Credential helpers

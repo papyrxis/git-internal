@@ -1,0 +1,47 @@
+
+\part{Codebase Architecture}
+\label{part:architecture}
+
+\begin{partintro}
+How is a 20-year-old, million-line codebase organized? Where does functionality live? How do components connect?
+\end{partintro}
+
+\chapter{Source Tree Organization}
+% Top-level structure
+% builtin/ - porcelain commands
+% core libraries (object, ref, commit, etc.)
+% compat/ - platform abstraction
+% t/ - test suite structure
+% Build system (Makefile)
+% How modularity evolved
+
+\chapter{Command Dispatch}
+% How Git handles 160+ commands
+% git.c entry point
+% Built-in vs external commands
+% Command registration mechanism
+% Execution path
+% Alias resolution
+
+\chapter{Platform Abstraction Layer}
+% Cross-platform C challenges
+% POSIX vs Windows
+% Wrapper functions (xmalloc, die, etc.)
+% Path handling differences
+% File system abstractions
+% Why this layer exists
+
+\chapter{Configuration System}
+% Multi-level config (system, global, local)
+% Config file format
+% Reading and writing
+% Config cache
+% Performance considerations
+
+\chapter{Testing Infrastructure}
+% test-lib.sh framework
+% How tests are structured
+% Test helpers and utilities
+% Performance tests
+% Regression prevention
+% CI/CD integration

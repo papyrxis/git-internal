@@ -1,0 +1,53 @@
+
+\part{The Data Model}
+\label{part:data-model}
+
+\begin{partintro}
+Git's core insight. Everything builds on this. Four object types, content-addressable storage, the DAG. This is the foundation.
+\end{partintro}
+
+\chapter{Content-Addressable Storage}
+% Hash as identity (SHA-1, SHA-256 transition)
+% Why this solves problems
+% Automatic deduplication
+% Integrity verification
+% Implementation in object database
+
+\chapter{The Four Object Types}
+% Blob: raw file content
+% Tree: directory structure  
+% Commit: snapshot + metadata + parents
+% Tag: annotated references
+% Object format and serialization
+% How they connect
+% Why these four
+
+\chapter{The Commit Graph (DAG)}
+% Why a graph not a tree
+% Parent relationships
+% Merge commits (multiple parents)
+% Graph properties that matter
+% Implications for algorithms
+
+\chapter{References and HEAD}
+% Branches as movable pointers
+% Tags (lightweight and annotated)
+% HEAD and symbolic refs
+% Remote tracking branches
+% Packed refs optimization
+% Reference transactions and atomicity
+
+\chapter{The Index (Staging Area)}
+% What it actually is
+% Binary format
+% Stat cache for performance
+% Multiple stages (merge conflicts)
+% Extensions: cache-tree, split-index
+% Why three-way merge needs this
+
+\chapter{Repository Layout}
+% .git/ directory structure
+% objects/ and refs/
+% hooks/, info/, logs/
+% config, HEAD, index
+% What each component does
