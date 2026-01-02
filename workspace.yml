@@ -1,17 +1,14 @@
 # Papyrxis Workspace Configuration
-# Generated: Fri Jan  2 01:24:03 PM +0330 2026
+# Generated: Fri Jan  2 20:43:55 +0330 2026
 
 project:
   type: book
   category: technical
   title: "Git Internals"
-  subtitle: ""
   author: "Mahdi"
   email: "bitsgenix@gmail.com"
   date: "auto"
-  url: "https://github.com/papyrxis/git-internal"
-  subject: "technical project"
-  keywords: "latex, book, technical"
+  url: "https://github.com/papyrxis/git-internal.git"
 
 build:
   engine: pdflatex
@@ -25,7 +22,6 @@ version:
   fallback: "dev"
 
 components:
-  - encoding
   - fonts
   - math
   - graphics
@@ -72,3 +68,8 @@ cover:
     title_size: large
     include_subtitle: true
     include_author: true
+
+overrides:
+  components_dir: "configs"
+  allow:
+    - fonts.tex

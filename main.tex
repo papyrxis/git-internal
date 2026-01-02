@@ -1,20 +1,23 @@
 \documentclass[12pt,oneside,openany]{book}
 
-% Metadata
+% Metadata - populated from workspace.yml
 \newcommand{\PDFTitle}{Git Internals}
 \newcommand{\PDFTitleFront}{Git Internals}
 \newcommand{\PDFCoverTitle}{Git Internals}
-\newcommand{\PDFSubject}{technical project}
-\newcommand{\PDFKeywords}{latex, book, technical}
+\newcommand{\PDFSubject}{Version Control Systems, Software Architecture, Git Internals}
+\newcommand{\PDFKeywords}{git, git internals, version control, vcs, software architecture, data structures, content-addressable storage, merkle tree, distributed systems, latex, technical book}
 \newcommand{\PDFAuthor}{Mahdi}
-\newcommand{\PDFURL}{https://github.com/papyrxis/git-internal}
+\newcommand{\PDFAuthorEmail}{bitsgenix@gmail.com}
+\newcommand{\PDFURL}{https://github.com/papyrxis/git-internal.git}
 
-% Import workspace components (will be synced)
+% Import workspace preset (auto-generated from workspace.yml)
 \input{.pxis/preset}
 
 \begin{document}
 
 \frontmatter
+\frontmatterpagenumber
+
 \input{frontmatter/cover}
 \input{frontmatter/title}
 \input{frontmatter/copyright}
@@ -24,6 +27,7 @@
 \tableofcontents
 
 \mainmatter
+\mainmatterpagenumber
 
 \input{parts/part01/part01}
 \input{parts/part02/part02}
@@ -38,6 +42,7 @@
 \backmatter
 
 \appendix
+\input{backmatter/appendix}
 
 \printbibliography[title={Bibliography}]
 \addcontentsline{toc}{chapter}{Bibliography}
