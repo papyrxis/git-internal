@@ -72,4 +72,7 @@ cover:
 overrides:
   components_dir: "configs"
   allow:
+    - code.tex
+    - colors.tex
     - fonts.tex
+    - env.tex
